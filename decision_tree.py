@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, plot_confusion_matrix#for vis
 for i in categorical_column_list:
     print(i)
     values = pd.DataFrame(previous_application[i].value_counts()).reset_index()
-    #print(values)
+    #print(values) for output
     k=0
     for j in values['index']:
         #print(j)
